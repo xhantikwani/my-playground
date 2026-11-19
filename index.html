@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts for Cyberpunk/Tech (not mine, template)-->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-     <!-- Js vibecoded, Im still learning(it been honestly a bit hard to fully grasp-->
+     <!-- Js and styling mostly vibecoded, Im still learning(it been honestly a bit hard to fully grasp) -->
 <script>
     tailwind.config = {
         theme: {
@@ -36,65 +37,6 @@
     }
 </script>
 
-<style>
-    /* Custom Cyber Styling */
-    body {
-        background-color: #0a0b10;
-        color: #e2e8f0;
-        font-family: 'Inter', sans-serif;
-        overflow-x: hidden;
-    }
-
-    /* Subtle Cyber Grid Background */
-    .cyber-grid {
-        background-image: linear-gradient(to right, rgba(157, 78, 221, 0.05) 1px, transparent 1px),
-                          linear-gradient(to bottom, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
-        background-size: 30px 30px;
-    }
-
-    /* Neon Glow Effects */
-    .glow-purple {
-        box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
-    }
-
-    .glow-blue {
-        box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
-    }
-
-    .glow-hover:hover {
-        box-shadow: 0 0 20px rgba(0, 240, 255, 0.5), 0 0 10px rgba(157, 78, 221, 0.4);
-        border-color: #00f0ff;
-    }
-
-    /* Neon Text Gradient */
-    .text-gradient {
-        background: linear-gradient(135deg, #00f0ff 0%, #9d4edd 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    /* Custom Scrollbar for Carousel */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-    .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    /* Cyber Glassmorphism */
-    .cyber-card {
-        background: rgba(18, 21, 32, 0.7);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(157, 78, 221, 0.2);
-        transition: all 0.3s ease;
-    }
-
-    .cyber-card:hover {
-        border-color: rgba(0, 240, 255, 0.6);
-        transform: translateY(-4px);
-    }
-</style>
 </head>
 <body class="cyber-grid min-h-screen relative flex flex-col justify-between">
 
@@ -142,7 +84,7 @@
 				<!-- Insta Button -->
                 <a href="https://www.instagram.com/champagne_sipps?dlrf=MTgwN3V6ZnU2bzVwYg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" 
                    class="flex items-center gap-3 px-5 py-3 rounded-xl bg-blue-950/50 hover:bg-blue-900/60 border border-blue-500/30 hover:border-blue-400 text-blue-300 font-mono text-sm transition-all glow-hover">
-                    <i class="fa-brands fa-Instagram text-xl text-blue-400"></i>
+                    <i class="fa-brands fa-instagram text-xl text-blue-400"></i>
                     <span>Instagram</span>
                 </a>
 				
@@ -188,23 +130,31 @@
         <h3>Languages & Tech Stack</h3>
         
         <div class="skill-group">
-          <h4>Proficient</h4>
+          <h4>Basic </h4>
           <div class="tag-list">
-            <span class="skill-tag proficient">HTML5</span>
-            <span class="skill-tag proficient">CSS3</span>
-            <span class="skill-tag proficient">SQL</span>
-            <span class="skill-tag proficient">Java</span>
-            <span class="skill-tag proficient">IT Troubleshooting</span>
-            <span class="skill-tag proficient">End-User Support</span>
+            <span class="skill-tag Basic">SQL</span>
+            <span class="skill-tag Basic">CSS</span>
+            <span class="skill-tag Basic">IT Troubleshooting</span>
+          </div>
+        </div>
+		
+		
+		<div class="skill-group">
+          <h4>Intermediate </h4>
+          <div class="tag-list">
+            <span class="skill-tag Intermediate">HTML5</span>
+            <span class="skill-tag Intermediate">Java</span>
+            <span class="skill-tag Intermediate">End-User Support</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <h4>Currently Learning & Teaching</h4>
+          <h4>Currently Learning</h4>
           <div class="tag-list">
             <span class="skill-tag learning">JavaScript</span>
-            <span class="skill-tag learning">Python (Coding & Robotics)</span>
-            <span class="skill-tag learning">Support Certs</span>
+            <span class="skill-tag learning">Java</span>
+            <span class="skill-tag learning">Python ( to support my Coding & Robotics teaching)</span>
+        <!--    <span class="skill-tag learning">Support Certs</span>     -->
           </div>
         </div>
       </article>
@@ -214,7 +164,9 @@
         <div class="card-badge">NOW & UP-NEXT</div>
         <h3>Upcoming Build: Pi Media Server</h3>
         <p>
-          Outside of support tickets and robotics lessons, I'm saving up for <strong>Raspberry Pi</strong> hardware to build and self-host my own home media server—getting hands-on with Linux, networking, and storage management.
+          Outside of support tickets and robotics lessons, I'm saving up for
+     		  <strong>Raspberry Pi(or similar)</strong> hardware to build and self-host my own home media 
+			  server—getting hands-on with Linux, networking, and storage management.
         </p>
         
         <!-- Hardware Goal Progress Bar -->
@@ -224,235 +176,15 @@
             <span class="goal-percent">In Progress</span>
           </div>
           <div class="progress-bar">
-            <div class="progress-fill" style="width: 45%;"></div>
+            <div class="progress-fill" style="width: 13%;"></div>
           </div>
-          <small class="goal-note">Target: Raspberry Pi + External Storage Setup</small>
+          <small class="goal-note">Target: Raspberry Pi + External Storage</small>
         </div>
       </article>
 
     </div>
   </div>
 </section>
-
-<style>
-  /* hub section */
-  .hub-section {
-    --bg-dark: #0b0c14;
-    --card-bg: #131524;
-    --card-border: #252842;
-    --accent-purple: #8b5cf6;
-    --accent-blue: #38bdf8;
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    
-    
-    color: var(--text-main);
-    
-    padding: 4rem 1.5rem;
-    line-height: 1.6;
-  }
-
-  .hub-container {
-    max-width: 1050px;
-    margin: 0 auto;
-  }
-
-  .hub-header {
-    margin-bottom: 2.5rem;
-  }
-
-  .hub-tag {
-    color: var(--accent-blue);
-    font-family: monospace;
-    font-size: 0.875rem;
-    letter-spacing: 0.1em;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  .hub-title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 700;
-    margin: 0;
-    background: linear-gradient(90deg, #ffffff, var(--accent-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* My somewhat responsive Grid */
-  .hub-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-
-  /* Make the story card span full width on medium/large screens if desired */
-  @media (min-width: 900px) {
-    .card-story {
-      grid-column: span 2;
-    }
-    .card-skills {
-      grid-row: span 2;
-    }
-  }
-
-  .hub-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 16px;
-    padding: 1.75rem;
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .hub-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent-purple);
-    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.25);
-  }
-
-  .card-badge {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    color: var(--accent-purple);
-    margin-bottom: 0.75rem;
-  }
-
-  .hub-card h3 {
-    font-size: 1.35rem;
-    margin: 0 0 1rem 0;
-    color: #ffffff;
-  }
-
-  .hub-card p {
-    color: var(--text-muted);
-    margin: 0 0 1rem 0;
-    font-size: 0.95rem;
-  }
-
-  .hub-card strong {
-    color: var(--text-main);
-  }
-
-  /* Live Status Pill (taken from template)*/
-  .status-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    background: rgba(56, 189, 248, 0.1);
-    border: 1px solid rgba(56, 189, 248, 0.3);
-    color: var(--accent-blue);
-    padding: 0.5rem 0.9rem;
-    border-radius: 999px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    margin-top: 0.5rem;
-    width: fit-content;
-  }
-
-  .pulse-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent-blue);
-    border-radius: 50%;
-    box-shadow: 0 0 8px var(--accent-blue);
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.4; transform: scale(1.2); }
-    100% { opacity: 1; transform: scale(1); }
-  }
-
-  /* Skill Tags */
-  .skill-group {
-    margin-bottom: 1.5rem;
-  }
-
-  .skill-group:last-child {
-    margin-bottom: 0;
-  }
-
-  .skill-group h4 {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-muted);
-    margin: 0 0 0.75rem 0;
-  }
-
-  .tag-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .skill-tag {
-    font-size: 0.82rem;
-    padding: 0.35rem 0.75rem;
-    border-radius: 8px;
-    font-weight: 500;
-  }
-
-  .skill-tag.proficient {
-    background: rgba(139, 92, 246, 0.15);
-    border: 1px solid rgba(139, 92, 246, 0.4);
-    color: #ddd6fe;
-  }
-
-  .skill-tag.learning {
-    background: rgba(56, 189, 248, 0.12);
-    border: 1px dashed rgba(56, 189, 248, 0.45);
-    color: #bae6fd;
-  }
-
-  /* Progress Tracker */
-  .goal-tracker {
-    background: rgba(0, 0, 0, 0.25);
-    padding: 1rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    margin-top: 0.5rem;
-  }
-
-  .goal-labels {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.82rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-main);
-  }
-
-  .goal-percent {
-    color: var(--accent-purple);
-    font-weight: 600;
-  }
-
-  .progress-bar {
-    width: 100%;
-    height: 8px;
-    background: #1e2238;
-    border-radius: 999px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-  }
-
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
-    border-radius: 999px;
-  }
-
-  .goal-note {
-    display: block;
-    font-size: 0.75rem;
-    color: var(--text-muted);
-  }
-</style>
 
 
 
@@ -492,7 +224,7 @@
             <!-- PHOTO SLOT 2 -->
             <div class="snap-start shrink-0 w-64 sm:w-80 h-96 cyber-card rounded-xl overflow-hidden relative group">
                 <!-- hosted image link -->
-                <img src=" https://i.postimg.cc/rp76BSmr/IMG-4825.jpg" 
+                <img src="https://i.postimg.cc/rp76BSmr/IMG-4825.jpg" 
 
 alt="Sipps Kwani Photo 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
@@ -718,29 +450,6 @@ alt="Sipps Kwani Photo 3" class="w-full h-full object-cover group-hover:scale-10
 </footer>
 
 <!-- INTERACTION & SLIDER SCRIPT (not done by me)-->
-<script>
-    // Set dynamic current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Horizontal Gallery Carousel Logic
-    const slider = document.getElementById('slider');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-
-    if (slider && prevBtn && nextBtn) {
-        // Scroll right
-        nextBtn.addEventListener('click', () => {
-            const cardWidth = slider.firstElementChild.offsetWidth + 16; // width + gap
-            slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
-        });
-
-        // Scroll left
-        prevBtn.addEventListener('click', () => {
-            const cardWidth = slider.firstElementChild.offsetWidth + 16; // width + gap
-            slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-        });
-    }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
-
